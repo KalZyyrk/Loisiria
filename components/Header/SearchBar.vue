@@ -60,6 +60,7 @@ export default {
     border-left: 1px solid var(--color-mid-gray);
     border-bottom: 1px solid var(--color-mid-gray);
     border-right: 1px solid var(--color-mid-gray);
+    cursor: pointer;
 }
 
 @media screen and (min-width: 780px) {

@@ -23,5 +23,6 @@ section {
 
 h2 {
     font-size: 1.2rem;
+    margin-bottom: 20px;
 }
 </style>

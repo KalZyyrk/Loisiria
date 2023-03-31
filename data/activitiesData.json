@@ -1,0 +1,39 @@
+[
+    {
+        "name": "Blausee",
+        "country": "suisse",
+        "city": "berne",
+        "price": 0,
+        "rating": 3,
+        "duration": "1h30",
+        "picture": "blausee.jpg",
+        "category": "water"
+    },    
+    {
+        "name": "Parapente",
+        "country": "france",
+        "city": "annecy",
+        "price": 80,
+        "rating": 4,
+        "duration": "1h",
+        "category": "aerial"
+    },
+    {
+        "name": "Balade à dos de chameau",
+        "country": "emirates arabes unis",
+        "city": "dubai",
+        "price": 41,
+        "rating": 4,
+        "duration": "1h",
+        "category":"hiking"
+    },
+    {
+        "name": "Ski Alpin",
+        "country": "france",
+        "city": "mont-tremblant",
+        "price": 24,
+        "rating": 5,
+        "duration": "30min",
+        "category": "winter"
+    }
+]

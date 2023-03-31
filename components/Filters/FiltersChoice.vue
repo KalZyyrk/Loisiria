@@ -6,6 +6,7 @@
 
 <script>
 import FilterCard from './FilterCard.vue';
+
 export default {
     data() {
         return {
@@ -42,4 +43,11 @@ export default {
 }
 </script>
 
-<style scoped></style>
+<style scoped>
+article {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin: auto;
+}
+</style>
