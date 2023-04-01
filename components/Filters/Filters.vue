@@ -24,5 +24,12 @@ section {
 h2 {
     font-size: 1.2rem;
     margin-bottom: 20px;
+    font-weight: 700;
+}
+
+@media screen and (min-width: 780px) {
+    h2 {
+        font-size: 1.5rem;
+    }
 }
 </style>

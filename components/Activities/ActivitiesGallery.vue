@@ -8,20 +8,20 @@
 import ActivityCard from './ActivityCard.vue';
 import activities from '@/data/activitiesData.json';
 export default {
-    data(){
-            return {
-                activities
-            }
-        },
+    data() {
+        return {
+            activities
+        }
+    },
     components: { ActivityCard }
 }
 </script>
 
 <style scoped>
-    div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 20px;
-    }
+div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
 </style>

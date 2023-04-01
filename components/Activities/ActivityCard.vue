@@ -3,6 +3,10 @@
         <div class="roll">
             <div class="chevron"><font-awesome-icon :icon="['fas', 'chevron-circle-up']" /></div>
             <h3> {{ activity.name }}</h3>
+            <div class="Info">
+                <p class="">{{ activity.city }}, {{ activity.country }}</p>
+                <p>A Partir de <strong> {{ activity.price }} €</strong></p>
+            </div>
         </div>
     </article>
 </template>
@@ -20,8 +24,8 @@ export default {
 
 <style scoped>
 article {
-    height: 100px;
-    width: 155px;
+    height: 120px;
+    width: 160px;
     box-shadow: 0 3px 4px var(--color-light-gray);
     border-radius: 10px 10px 0 0;
     background-position: center;
@@ -34,6 +38,9 @@ article {
     width: 100%;
     position: relative;
     background-color: white;
+    display: flex;
+    height: 35%;
+    justify-content: space-between;
 }
 
 .chevron {
@@ -53,6 +60,20 @@ svg {
 }
 
 h3 {
-    font-size: 14px;
+    font-size: 0.7rem;
+}
+
+.address p {
+    font-size: 0.5rem;
+    text-transform: capitalize;
+}
+
+.priceInfo p {
+    font-size: 0.5rem;
+    text-transform: uppercase;
+}
+
+strong {
+    font-size: .8rem;
 }
 </style>

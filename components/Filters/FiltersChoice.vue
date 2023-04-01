@@ -50,4 +50,11 @@ article {
     flex-wrap: wrap;
     margin: auto;
 }
+
+@media screen and (min-width: 780px) {
+    article {
+        padding: 0 20px;
+        gap: 30px;
+    }
+}
 </style>
