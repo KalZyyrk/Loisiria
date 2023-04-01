@@ -1,6 +1,9 @@
 <template>
     <div>
-        <ActivityCard v-for="activity in activities" :activity="activity" :key="activities.name" />
+        <ActivityCard v-for="activity in filterActivities" :activity="activity" :key="activities.name" />
+        <p :style="filterActivities.length == 0 ? { 'display': '' } : { 'display': 'none' }">Pas d'activité pour
+            cette
+            categorie</p>
     </div>
 </template>
 
@@ -10,10 +13,31 @@ import activities from '@/data/activitiesData.json';
 export default {
     data() {
         return {
-            activities
+            activities,
+            filterActivities: activities
         }
     },
-    components: { ActivityCard }
+    methods: {
+        setfilterActivities() {
+            return this.activities.filter(activity => activity.category == this.getCategory)
+        }
+    },
+    components: { ActivityCard },
+    computed: {
+        getCategory() {
+            return this.$store.getters.getCategory
+        },
+    },
+    watch: {
+        getCategory() {
+            if (this.getCategory == 'all') {
+                this.filterActivities = activities
+            } else {
+                this.filterActivities = this.setfilterActivities();
+                console.log(this.filterActivities.length);
+            }
+        }
+    }
 }
 </script>
 

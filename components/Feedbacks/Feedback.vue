@@ -1,13 +1,13 @@
 <template>
     <div>
-        <Rates :rates="feedback.rating"/>
+        <Rates :rates="feedback.rating" />
     </div>
 </template>
 
 <script>
-import Rates from './Rates.vue';
+import Rates from '@/components/Rates.vue';
 
-    export default {
+export default {
     props: {
         feedback: Object
     },
@@ -15,6 +15,4 @@ import Rates from './Rates.vue';
 }
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

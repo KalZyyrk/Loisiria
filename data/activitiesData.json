@@ -7,7 +7,8 @@
         "rating": 3,
         "duration": "1h30",
         "picture": "https://www.hebergeur-image.com/upload/86.71.25.64-6427eeed8a8cc.jpg",
-        "category": "water"
+        "category": "water",
+        "popular": false
     },
     {
         "name": "Parapente",
@@ -17,7 +18,8 @@
         "rating": 4,
         "duration": "1h",
         "picture": "https://www.hebergeur-image.com/upload/86.71.25.64-6427efa193919.jpg",
-        "category": "aerial"
+        "category": "aerial",
+        "popular": false
     },
     {
         "name": "Balade à dos de chameau",
@@ -27,7 +29,8 @@
         "rating": 4,
         "duration": "1h",
         "picture": "https://www.hebergeur-image.com/upload/86.71.25.64-6427efa2c3349.jpg",
-        "category": "hiking"
+        "category": "hiking",
+        "popular": true
     },
     {
         "name": "Ski Alpin",
@@ -37,6 +40,7 @@
         "rating": 5,
         "duration": "30min",
         "picture": "https://www.hebergeur-image.com/upload/86.71.25.64-6427efa05474c.jpg",
-        "category": "winter"
+        "category": "winter",
+        "popular": true
     }
 ]

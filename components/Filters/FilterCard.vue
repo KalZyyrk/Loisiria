@@ -8,17 +8,16 @@
 <script>
 
 export default {
-    data() {
-        return {
-            category: ''
-        }
-    },
     props: {
         filter: Object
     },
     methods: {
         selectCategory() {
-            console.log(this.filter.category);
+            if (this.$store.getters.getCategory == this.filter.category) {
+                this.$store.commit('unsetCategory')
+            } else {
+                this.$store.commit('setCategory', this.filter.category)
+            }
         }
     },
 }
