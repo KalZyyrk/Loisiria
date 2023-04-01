@@ -6,9 +6,9 @@
         "price": 0,
         "rating": 3,
         "duration": "1h30",
-        "picture": "blausee.jpg",
+        "picture": "https://www.hebergeur-image.com/upload/86.71.25.64-6427eeed8a8cc.jpg",
         "category": "water"
-    },    
+    },
     {
         "name": "Parapente",
         "country": "france",
@@ -16,6 +16,7 @@
         "price": 80,
         "rating": 4,
         "duration": "1h",
+        "picture": "https://www.hebergeur-image.com/upload/86.71.25.64-6427efa193919.jpg",
         "category": "aerial"
     },
     {
@@ -25,7 +26,8 @@
         "price": 41,
         "rating": 4,
         "duration": "1h",
-        "category":"hiking"
+        "picture": "https://www.hebergeur-image.com/upload/86.71.25.64-6427efa2c3349.jpg",
+        "category": "hiking"
     },
     {
         "name": "Ski Alpin",
@@ -34,6 +36,7 @@
         "price": 24,
         "rating": 5,
         "duration": "30min",
+        "picture": "https://www.hebergeur-image.com/upload/86.71.25.64-6427efa05474c.jpg",
         "category": "winter"
     }
 ]

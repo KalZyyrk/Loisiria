@@ -1,6 +1,6 @@
 <template>
     <footer>
-        <FooterInfo v-for="info in footerInfo" :info="info" :key="info.title"/>
+        <FooterInfo v-for="info in footerInfo" :info="info" :key="info.title" />
         <FooterNews />
         <FooterCopy />
     </footer>
@@ -11,7 +11,7 @@ import FooterInfo from './FooterInfo.vue';
 import FooterNews from './FooterNews.vue';
 import FooterCopy from './FooterCopy.vue'
 
-    export default {
+export default {
     data() {
         return {
             footerInfo: [
@@ -31,5 +31,8 @@ import FooterCopy from './FooterCopy.vue'
 </script>
 
 <style scoped>
-
+footer {
+    margin-top: 25px;
+    padding: 20px 35px;
+}
 </style>
