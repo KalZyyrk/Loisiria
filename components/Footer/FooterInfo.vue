@@ -1,0 +1,17 @@
+<template>
+    <div>
+
+    </div>
+</template>
+
+<script>
+    export default {
+        props:{
+            info: Object
+        }
+    }
+</script>
+
+<style scoped>
+
+</style>
