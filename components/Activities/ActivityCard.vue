@@ -1,7 +1,7 @@
 <template>
     <article :style="{ 'background-image': 'url(' + activity.picture + ')' }">
         <div class="roll">
-            <font-awesome-icon :icon="['far', 'chevron-circle-up']" />
+            <div class="chevron"><font-awesome-icon :icon="['fas', 'chevron-circle-up']" /></div>
             <h3> {{ activity.name }}</h3>
         </div>
     </article>
@@ -31,7 +31,28 @@ article {
 }
 
 .roll {
+    width: 100%;
     position: relative;
     background-color: white;
+}
+
+.chevron {
+    top: calc(-15px/2);
+    left: calc(50% - 15px/2);
+    position: absolute;
+    display: flex;
+    background-color: var(--color-mid-gray);
+    width: 16px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+
+svg {
+    color: white;
+}
+
+h3 {
+    font-size: 14px;
 }
 </style>
