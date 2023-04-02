@@ -66,7 +66,7 @@ article {
     height: 50%;
     padding: 5px;
     transition: 500ms;
-    margin-bottom: -20%;
+    margin-bottom: -25%;
 }
 
 .active {
@@ -153,5 +153,19 @@ strong {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
+}
+
+@media screen and (min-width: 780px) {
+    article {
+        width: calc(25% - 30px);
+    }
+
+    .roll {
+        margin-bottom: -15%;
+    }
+
+    .active {
+        margin-bottom: 0;
+    }
 }
 </style>

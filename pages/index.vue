@@ -15,10 +15,16 @@ import Footer from '../components/Footer/Footer.vue';
 
 export default {
     components: {
-    Header,
-    Filters,
-    Activities,
-    Footer
-}
+        Header,
+        Filters,
+        Activities,
+        Footer
+    }
 }
 </script>
+<style>
+main {
+    margin: auto;
+    max-width: 1200px;
+}
+</style>
