@@ -158,10 +158,11 @@ strong {
 @media screen and (min-width: 780px) {
     article {
         width: calc(25% - 30px);
+        height: 200px;
     }
 
     .roll {
-        margin-bottom: -15%;
+        margin-bottom: -35%;
     }
 
     .active {

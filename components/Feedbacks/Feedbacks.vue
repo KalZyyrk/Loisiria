@@ -28,7 +28,7 @@ section {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    gap: 45px;
     background-color: var(--background);
     justify-content: center;
 }
