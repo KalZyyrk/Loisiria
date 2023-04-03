@@ -1,10 +1,14 @@
 export const state = () => ({
-    category: 'all'
+    category: 'all',
+    inputValue: ''
 })
 
 export const getters = {
     getCategory(state) {
         return state.category
+    },
+    getInputValue(state) {
+        return state.inputValue
     }
 }
 
@@ -14,5 +18,16 @@ export const mutations = {
     },
     unsetCategory(state) {
         state.category = 'all'
+    },
+    setInputValue(state, newInputValue) {
+        state.inputValue = newInputValue
     }
 }
+
+export const actions = {
+    setInputValue(state, newInputValue) {
+        newInputValue = newInputValue.toLowerCase()
+        state.commit('setInputValue', newInputValue)
+    }
+}
+

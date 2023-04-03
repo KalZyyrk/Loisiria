@@ -1,8 +1,7 @@
 <template>
     <div>
         <ActivityCard v-for="activity in filterActivities" :activity="activity" :key="activities.name" />
-        <p :style="filterActivities.length == 0 ? { 'display': '' } : { 'display': 'none' }">Pas d'activité pour
-            cette
+        <p :style="filterActivities.length == 0 ? { 'display': '' } : { 'display': 'none' }">Pas d'activité pour cette
             categorie</p>
     </div>
 </template>
@@ -22,7 +21,7 @@ export default {
             return this.activities.filter(activity => activity.category == this.getCategory)
         },
         setSearchActivities() {
-            return this.activities.filter(activity => activity.country || activity.city == this.getInputValue)
+            return this.activities.filter(activity => [activity.country, activity.city].includes(this.getInputValue))
         }
     },
     components: { ActivityCard },
@@ -31,7 +30,7 @@ export default {
             return this.$store.getters.getCategory
         },
         getInputValue() {
-            return this.$store.state.searchBar.inputValue
+            return this.$store.getters.getInputValue
         }
     },
     watch: {
@@ -44,10 +43,12 @@ export default {
             }
         },
         getInputValue() {
-            if (this.inputValue == '') {
+            console.log(this.getInputValue);
+            if (this.getInputValue == '') {
                 this.filterActivities = activities
             } else {
                 this.filterActivities = this.setSearchActivities()
+                console.log(this.filterActivities);
             }
         }
     }
