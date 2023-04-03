@@ -161,10 +161,6 @@ strong {
         height: 200px;
     }
 
-    .roll {
-        margin-bottom: -35%;
-    }
-
     .active {
         margin-bottom: 0;
     }
