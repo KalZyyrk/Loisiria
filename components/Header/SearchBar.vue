@@ -15,6 +15,8 @@ export default {
     methods: {
         searchLocation() {
             console.log(this.localisation);
+            this.$store.dispatch('searchBar/setInputValue', this.localisation)
+            console.log(this.$store.state.searchBar.inputValue);
         }
     }
 }

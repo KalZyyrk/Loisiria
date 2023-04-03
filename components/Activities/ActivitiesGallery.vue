@@ -20,6 +20,9 @@ export default {
     methods: {
         setfilterActivities() {
             return this.activities.filter(activity => activity.category == this.getCategory)
+        },
+        setSearchActivities() {
+            return this.activities.filter(activity => activity.country || activity.city == this.getInputValue)
         }
     },
     components: { ActivityCard },
@@ -27,6 +30,9 @@ export default {
         getCategory() {
             return this.$store.getters.getCategory
         },
+        getInputValue() {
+            return this.$store.state.searchBar.inputValue
+        }
     },
     watch: {
         getCategory() {
@@ -35,6 +41,13 @@ export default {
             } else {
                 this.filterActivities = this.setfilterActivities();
                 console.log(this.filterActivities.length);
+            }
+        },
+        getInputValue() {
+            if (this.inputValue == '') {
+                this.filterActivities = activities
+            } else {
+                this.filterActivities = this.setSearchActivities()
             }
         }
     }
