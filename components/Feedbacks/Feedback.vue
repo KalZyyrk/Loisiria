@@ -25,11 +25,7 @@ export default {
         }
     },
     components: { Rates },
-    methods: {
-        getUrl(img) {
-            return require(`~/assets/img/${img}`);
-        }
-    }
+
 }
 </script>
 
