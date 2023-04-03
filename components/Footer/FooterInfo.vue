@@ -16,15 +16,27 @@ export default {
 </script>
 
 <style scoped>
+article {
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
 h3 {
     color: var(--color-red);
+    font-size: 18px;
 }
 
 ul {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
     margin-left: 10px;
 }
 
 li {
+    font-size: 12px;
     list-style: none;
 }
 

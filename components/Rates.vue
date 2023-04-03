@@ -1,6 +1,6 @@
 <template>
     <div class="rates">
-        <font-awesome-icon :key="rate" :icon="['fas', 'star']" :class="rates < rate ? 'gray' : 'green'"
+        <font-awesome-icon :key="rate" :icon="['fas', 'star']" :class="rates < rate ? 'gray ' + page : 'green ' + page"
             v-for=" rate in range" />
     </div>
 </template>
@@ -13,15 +13,21 @@ export default {
         }
     },
     props: {
-        rates: Number
+        rates: Number,
+        page: String
     }
 }
 </script>
 
 <style scoped>
-svg {
+.activity {
     height: 10px;
     width: 10px !important;
+}
+
+.feedback {
+    height: 13px;
+    width: 20px;
 }
 
 .green {

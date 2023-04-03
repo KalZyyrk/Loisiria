@@ -16,7 +16,7 @@
                     activity.price }} €</strong></p>
             </div>
             <div class="hiddenInfo">
-                <Rates :rates="activity.rating" />
+                <Rates :rates="activity.rating" page="activity" />
                 <p class="duration">duree <strong>{{ activity.duration }}</strong></p>
             </div>
         </div>

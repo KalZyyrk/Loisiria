@@ -12,8 +12,11 @@ export default {
 
 <style scoped>
 p {
+    margin: 15px;
     text-align: center;
     font-size: 10px;
     color: var(--color-mid-gray);
+    bottom: 5px;
+    width: 100%;
 }
 </style>
