@@ -23,6 +23,10 @@ a {
     font-size: 1rem;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
 .nav-icon {
     margin-right: 8px;
 }

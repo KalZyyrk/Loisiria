@@ -1,6 +1,7 @@
 <template>
     <div class="rates">
-        <font-awesome-icon :icon="['fas', 'star']" :class="rates < rate ? 'gray' : 'green'" v-for=" rate in range" />
+        <font-awesome-icon :key="rate" :icon="['fas', 'star']" :class="rates < rate ? 'gray' : 'green'"
+            v-for=" rate in range" />
     </div>
 </template>
 
@@ -20,7 +21,7 @@ export default {
 <style scoped>
 svg {
     height: 10px;
-    width: 10px;
+    width: 10px !important;
 }
 
 .green {

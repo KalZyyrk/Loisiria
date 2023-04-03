@@ -63,10 +63,10 @@ article {
 .roll {
     position: relative;
     background-color: white;
-    height: 50%;
+    height: 70%;
     padding: 5px;
     transition: 500ms;
-    margin-bottom: -25%;
+    margin-bottom: -35%;
 }
 
 .active {
